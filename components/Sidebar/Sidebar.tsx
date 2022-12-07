@@ -8,8 +8,8 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
   const location = useRouter();
   const { pathname } = location;
 
-  const trigger = useRef(null);
-  const sidebar = useRef(null);
+  const trigger:any = useRef(null);
+  const sidebar:any = useRef(null);
 
   const storedSidebarExpanded = "";
   useEffect(() => {
