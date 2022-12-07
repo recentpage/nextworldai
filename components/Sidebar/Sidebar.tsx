@@ -194,14 +194,14 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: any) {
                   </div>
                 </Link>
               </li>
-              {/* Inbox */}
+              {/* Spaces */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
                   pathname.includes("inbox") && "bg-slate-900"
                 }`}
               >
                 <Link
-                  href="/inbox"
+                  href="/spaces"
                   className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
                     pathname.includes("inbox") && "hover:text-slate-200"
                   }`}
@@ -210,85 +210,85 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }: any) {
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
                         className={`fill-current text-slate-600 ${
-                          pathname.includes("inbox") && "text-indigo-500"
+                          pathname.includes("spaces") && "text-indigo-500"
                         }`}
                         d="M16 13v4H8v-4H0l3-9h18l3 9h-8Z"
                       />
                       <path
                         className={`fill-current text-slate-400 ${
-                          pathname.includes("inbox") && "text-indigo-300"
+                          pathname.includes("spaces") && "text-indigo-300"
                         }`}
                         d="m23.72 12 .229.686A.984.984 0 0 1 24 13v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1v-8c0-.107.017-.213.051-.314L.28 12H8v4h8v-4H23.72ZM13 0v7h3l-4 5-4-5h3V0h2Z"
                       />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Inbox
+                      Spaces
                     </span>
                   </div>
                 </Link>
               </li>
-              {/* Calendar */}
+              {/* Tools */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("calendar") && "bg-slate-900"
+                  pathname.includes("tools") && "bg-slate-900"
                 }`}
               >
                 <Link
-                  href="/calendar"
+                  href="/tools"
                   className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
-                    pathname.includes("calendar") && "hover:text-slate-200"
+                    pathname.includes("tools") && "hover:text-slate-200"
                   }`}
                 >
                   <div className="flex items-center">
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
                         className={`fill-current text-slate-600 ${
-                          pathname.includes("calendar") && "text-indigo-500"
+                          pathname.includes("tools") && "text-indigo-500"
                         }`}
                         d="M1 3h22v20H1z"
                       />
                       <path
                         className={`fill-current text-slate-400 ${
-                          pathname.includes("calendar") && "text-indigo-300"
+                          pathname.includes("tools") && "text-indigo-300"
                         }`}
                         d="M21 3h2v4H1V3h2V1h4v2h10V1h4v2Z"
                       />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Calendar
+                      Tools
                     </span>
                   </div>
                 </Link>
               </li>
-              {/* Campaigns */}
+              {/* Request a feature */}
               <li
                 className={`px-3 py-2 rounded-sm mb-0.5 last:mb-0 ${
-                  pathname.includes("campaigns") && "bg-slate-900"
+                  pathname.includes("rafe") && "bg-slate-900"
                 }`}
               >
                 <Link
-                  href="/campaigns"
+                  href="/rafe"
                   className={`block text-slate-200 hover:text-white truncate transition duration-150 ${
-                    pathname.includes("campaigns") && "hover:text-slate-200"
+                    pathname.includes("rafe") && "hover:text-slate-200"
                   }`}
                 >
                   <div className="flex items-center">
                     <svg className="shrink-0 h-6 w-6" viewBox="0 0 24 24">
                       <path
                         className={`fill-current text-slate-600 ${
-                          pathname.includes("campaigns") && "text-indigo-500"
+                          pathname.includes("rafe") && "text-indigo-500"
                         }`}
                         d="M20 7a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 0120 7zM4 23a.75.75 0 01-.75-.75 1.5 1.5 0 00-1.5-1.5.75.75 0 110-1.5 1.5 1.5 0 001.5-1.5.75.75 0 111.5 0 1.5 1.5 0 001.5 1.5.75.75 0 110 1.5 1.5 1.5 0 00-1.5 1.5A.75.75 0 014 23z"
                       />
                       <path
                         className={`fill-current text-slate-400 ${
-                          pathname.includes("campaigns") && "text-indigo-300"
+                          pathname.includes("rafe") && "text-indigo-300"
                         }`}
                         d="M17 23a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 010-2 4 4 0 004-4 1 1 0 012 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1zM7 13a1 1 0 01-1-1 4 4 0 00-4-4 1 1 0 110-2 4 4 0 004-4 1 1 0 112 0 4 4 0 004 4 1 1 0 010 2 4 4 0 00-4 4 1 1 0 01-1 1z"
                       />
                     </svg>
                     <span className="text-sm font-medium ml-3 lg:opacity-0 lg:sidebar-expanded:opacity-100 2xl:opacity-100 duration-200">
-                      Campaigns
+                    Request a feature
                     </span>
                   </div>
                 </Link>
