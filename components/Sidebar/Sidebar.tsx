@@ -23,7 +23,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
 
   // close on click outside
   useEffect(() => {
-    const clickHandler = ({ target }) => {
+    const clickHandler = ({ target }:any) => {
       if (!sidebar.current || !trigger.current) return;
       if (
         !sidebarOpen ||
@@ -39,7 +39,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
 
   // close if the esc key is pressed
   useEffect(() => {
-    const keyHandler = ({ keyCode }) => {
+    const keyHandler = ({ keyCode }:any) => {
       if (!sidebarOpen || keyCode !== 27) return;
       setSidebarOpen(false);
     };
