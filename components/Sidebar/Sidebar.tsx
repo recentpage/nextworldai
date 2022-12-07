@@ -48,7 +48,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
   });
 
   useEffect(() => {
-    localStorage.setItem("sidebar-expanded", sidebarExpanded);
+    localStorage.setItem("sidebar-expanded", sidebarExpanded.toString());
     if (sidebarExpanded) {
       document.querySelector("body").classList.add("sidebar-expanded");
     } else {
