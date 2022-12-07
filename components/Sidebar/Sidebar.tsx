@@ -17,7 +17,8 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
   }, []);
 
   const [sidebarExpanded, setSidebarExpanded] = useState(
-    storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
+    // storedSidebarExpanded === null ? false : storedSidebarExpanded === "true"
+    storedSidebarExpanded === null ? false : true
   );
 
   // close on click outside
