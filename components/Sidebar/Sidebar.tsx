@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 
 import SidebarLinkGroup from "./SidebarLinkGroup";
 
-export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
+export default function Sidebar({ sidebarOpen, setSidebarOpen }: any) {
   const location = useRouter();
   const { pathname } = location;
 
-  const trigger:any = useRef(null);
-  const sidebar:any = useRef(null);
+  const trigger: any = useRef(null);
+  const sidebar: any = useRef(null);
 
   const storedSidebarExpanded = "";
   useEffect(() => {
@@ -23,7 +23,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
 
   // close on click outside
   useEffect(() => {
-    const clickHandler = ({ target }:any) => {
+    const clickHandler = ({ target }: any) => {
       if (!sidebar.current || !trigger.current) return;
       if (
         !sidebarOpen ||
@@ -39,7 +39,7 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
 
   // close if the esc key is pressed
   useEffect(() => {
-    const keyHandler = ({ keyCode }:any) => {
+    const keyHandler = ({ keyCode }: any) => {
       if (!sidebarOpen || keyCode !== 27) return;
       setSidebarOpen(false);
     };
@@ -50,8 +50,10 @@ export default function Sidebar({ sidebarOpen, setSidebarOpen }:any) {
   useEffect(() => {
     localStorage.setItem("sidebar-expanded", sidebarExpanded.toString());
     if (sidebarExpanded) {
+      // @ts-ignore
       document.querySelector("body").classList.add("sidebar-expanded");
     } else {
+      // @ts-ignore
       document.querySelector("body").classList.remove("sidebar-expanded");
     }
   }, [sidebarExpanded]);
